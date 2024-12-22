@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>我的網頁</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+		<style type="text/css">
+		.btn-white {
+}
+        </style>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="index.css">
+	</head>
+	
+	<body class="bg-transparent">
+	<!--Navbar-->
+	<nav class="navbar navbar-expand-lg bg-body-tertiary bg-warning-subtle shadow-sm p-3 mb-5 bg-body-tertiary rounded">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold">111219007 趙翊如&nbsp;&nbsp;</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">首頁&nbsp;</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.youtube.com/channel/UCIsyxlNoeOEeROvkEhhfU9g">Youtube&nbsp;</a>
+        </li>
+		   <li class="nav-item">
+          <a class="nav-link" href="https://www.youtube.com/channel/UCIsyxlNoeOEeROvkEhhfU9g">GitHub&nbsp;</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            台北動物之家
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="https://www.tcapo.gov.taipei/Content_List.aspx?n=8A474D4AA59E06B7">官方網站</a></li>
+            <li><a class="dropdown-item" href="https://www.facebook.com/tcapo.tas/?locale=zh_TW">Facebook</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="https://www.tcapo.gov.taipei/cp.aspx?n=141D6BD837F00436">成為志工</a></li>
+			  <li><a class="dropdown-item" href="https://www.tcapo.gov.taipei/cp.aspx?n=540601EBB8FD4066">我要認養</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-dark" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+	<!--輪播器-->
+	<div class="container text-center">
+  <div class="row">
+    <div class="col">
+      <h3 class="bg-black rounded-pill text-white">影音作品</h3>
+		<div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/naZPA8j_0IA?si=ofw_GwbZmhiDoR5K" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="carousel-item">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/SvfzmFX1ZUY?si=MAnco3P2WnoL30Vk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="carousel-item">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/pREArBHpHJ4?si=aIqim3pJqYGwpDOU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+		<div class="row shadow-sm p-3 mb-5 bg-body-tertiary rounded">
+  <div class="col-5">
+    <div id="list-example" class="list-group">
+      <a class="list-group-item list-group-item-action" href="#list-item-1">高中畢業影片</a>
+      <a class="list-group-item list-group-item-action" href="#list-item-2">微電影《孟婆湯》</a>
+      <a class="list-group-item list-group-item-action" href="#list-item-3">自製遊戲《保衛家園大作戰》</a>
+    </div>
+  </div>
+  <div class="col">
+    <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+      <h5 id="list-item-1">高中畢業影片</h5>
+      <table class="table table-dark table-striped fw-semibold" width="295" border="1">
+  <tbody>
+    <tr>
+      <td class="fw-bold">導演&nbsp;</td>
+      <td class="fw-light">傅珮慈&nbsp;</td>
+      <td class="fw-light">趙翊如&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="fw-bold">剪輯&nbsp;</td>
+      <td class="fw-light">趙翊如&nbsp;</td>
+      <td class="fw-light">&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="fw-bold">旁白&nbsp;</td>
+      <td class="fw-light">熊昱勛&nbsp;</td>
+      <td class="fw-light">吳重誼&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+
+      <h5 id="list-item-2">微電影《孟婆湯》</h5>
+      <table class="table table-dark table-striped fw-semibold" width="295" border="1">
+  <tbody>
+    <tr>
+      <td class="fw-bold">道具製作&nbsp;</td>
+      <td class="fw-light">蕭郁穎&nbsp;</td>
+      <td class="fw-light">陳婕宜&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="fw-bold">道具操作&nbsp;</td>
+      <td class="fw-light">陳婕宜&nbsp;</td>
+      <td class="fw-light">趙翊如&nbsp;</td>
+    </tr>
+    <tr>
+      <td class="fw-bold">影片攝影&nbsp;</td>
+      <td class="fw-light">蕭郁穎&nbsp;</td>
+      <td class="fw-light">&nbsp;</td>
+    </tr>
+	   <tr>
+      <td class="fw-bold">配音錄製&nbsp;</td>
+      <td class="fw-light">余盈蓁&nbsp;</td>
+      <td class="fw-light">&nbsp;</td>
+    </tr>
+	   <tr>
+      <td class="fw-bold">影片剪輯&nbsp;</td>
+      <td class="fw-light">趙翊如&nbsp;</td>
+      <td class="fw-light">&nbsp;</td>
+    </tr>
+  </tbody>
+</table>
+      <h5 id="list-item-3">自製遊戲《保衛家園大作戰》</h5>
+      <p>使用Unreal Engine獨自製作</p>
+    </div>
+  </div>
+</div>
+    </div>
+    <div class="col">
+      <h3 class="bg-black rounded-pill text-white">作品集</h3>
+		<div style="position: relative; width: 100%; height: 0; padding-top: 141.4286%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGF4CXNr10&#x2F;S1Hx-9wVCWsJy_ZvQG0fiw&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>
+    </div>
+  </div>
+</div>
+	<!--Alert-->
+	<div class="alert alert-primary alert-dismissible fade show" role="alert">
+    <strong>Notice!</strong> 作業資料缺失
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+	<div class="alert alert-success alert-dismissible fade show" role="alert">
+    <strong>Congratulation!</strong> 期末好運貓貓已成功造訪
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+		<div class="alert alert-danger alert-dismissible fade show" role="alert">
+    <strong>Warning!</strong> 期末被當警告
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+	<!--Cards-->
+		<div class="container text-center">
+  <div class="row">
+    <div class="col">
+     <div class="shadow-sm card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="0305.png" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8 bg-dark">
+      <div class="card-body">
+        <h5 class="card-title" style="color:white">0305</h5>
+        <p class="card-text" style="color:white">我的名片</p>
+		  <a href="/0305/index.html" class="btn btn-light">See More...</a>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+    <div class="col">
+       <div class="shadow-sm card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="0312.png" width="96" heigt="auto" class="rounded-start" alt="...">
+    </div>
+    <div class="col-md-8 bg-dark">
+      <div class="card-body">
+        <h5 class="card-title" style="color:white">0312</h5>
+        <p class="card-text" style="color:white">網頁容器</p>
+		  <a href="/0312/index.html" class="btn btn-light">See More...</a>
+	 </div>
+    </div>
+  </div>
+</div>
+    </div>
+    <div class="col">
+       <div class="shadow-sm card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="0319.png" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8 bg-dark">
+      <div class="card-body">
+        <h5 class="card-title" style="color:white">0319</h5>
+        <p class="card-text" style="color:white">CSS設計工具</p>
+		  <a href="/0319/index.html" class="btn btn-light">See More...</a>
+		   </div>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+	<div class="row">
+    <div class="col">
+      <div class="shadow-sm card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="0326.png" alt="..." width="115" class="img-fluid rounded-start">
+    </div>
+    <div class="col-md-8 bg-dark">
+      <div class="card-body">
+        <h5 class="card-title" style="color:white">0326</h5>
+        <p class="card-text" style="color:white">CSS基本語法常用屬性I</p>
+		  <div class="dropdown">
+  			<a class="btn btn-secondary dropdown-toggle btn-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">See More...
+ 
+ </a>
+
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="/0326/0326-01.html">0326-01</a></li>
+    <li><a class="dropdown-item" href="/0326/0326-02.html">0326-02</a></li>
+    <li><a class="dropdown-item" href="/0326/0326-03.html">0326-03</a></li>
+	<li><a class="dropdown-item" href="/0326/0326-04.html">0326-04</a></li>
+	<li><a class="dropdown-item" href="/0326/0326-05.html">0326-05</a></li>
+	<li><a class="dropdown-item" href="/0326/0326-06.html">0326-06</a></li>
+  </ul>
+</div>
+		   </div>
+    </div>
+  </div>
+</div>
+    </div>
+    <div class="col">
+       <div class="shadow-sm card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="0402.png" alt="..." width="118" class="img-fluid rounded-start">
+    </div>
+    <div class="col-md-8 bg-dark">
+      <div class="card-body">
+        <h5 class="card-title" style="color:white">0402</h5>
+        <p class="card-text" style="color:white">Google Site</p>
+		  <a href="https://sites.google.com/stu.ntue.edu.tw/economic/%E9%A6%96%E9%A0%81" class="btn btn-light">See More...</a>
+	 </div>
+    </div>
+  </div>
+</div>
+	   </div>
+    <div class="col">
+     <div class="shadow-sm card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="0416.png" alt="..." width="123" class="img-fluid rounded-start">
+    </div>
+    <div class="col-md-8 bg-dark">
+      <div class="card-body">
+        <h5 class="card-title" style="color:white">0416</h5>
+        <p class="card-text" style="color:white">Bootstrap網格</p>
+		  <a href="/0423/index.html" class="btn btn-light">See More...</a>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+	<div class="row">
+    <div class="col">
+       <div class="shadow-sm card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="0423.png" alt="..." width="120" height="144" class="img-fluid rounded-start">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body bg-dark">
+        <h5 class="card-title" style="color:white">0423</h5>
+        <p class="card-text" style="color:white">Bootstrap內容樣式</p>
+		  <a href="/0423/index.html" class="btn btn-light">See More...</a>
+	 </div>
+    </div>
+  </div>
+</div>
+    </div>
+    <div class="col">
+       <div class="shadow-sm card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="0423-b.png" alt="..." width="120" class="img-fluid rounded-start">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">0423</h5>
+        <p class="card-text">Bonus</p>
+		  <a href="/0423/bonus.html" class="btn btn-dark">See More...</a>
+	 </div>
+    </div>
+  </div>
+</div>
+    </div>
+    <div class="col">
+      <div class="shadow-sm card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="0430.png" alt="..." width="119" class="img-fluid rounded-start">
+    </div>
+    <div class="col-md-8 bg-dark">
+      <div class="card-body">
+        <h5 class="card-title" style="color:white">0430</h5>
+        <p class="card-text" style="color:white">公用類別與表單&nbsp;</p>
+		  <a href="/0430/index.html" class="btn btn-light">See More...</a>
+		  </div>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+	<div class="row">
+    <div class="col">
+       <div class="shadow-sm card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="0430-b.png" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">0430</h5>
+        <p class="card-text">Bonus</p>
+		  <a href="/0430/bonus.html" class="btn btn-dark">See More...</a>
+	 </div>
+    </div>
+  </div>
+</div>
+    </div>
+    <div class="col">
+       <div class="shadow-sm card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="0507.png" alt="..." width="118" class="img-fluid rounded-start">
+    </div>
+    <div class="col-md-8 bg-dark">
+      <div class="card-body">
+        <h5 class="card-title" style="color:white">0507</h5>
+        <p class="card-text" style="color:white">Bootstrap元件(一)</p>
+		  <a href="/0507/index.html" class="btn btn-light">See More...</a>
+	 </div>
+    </div>
+  </div>
+</div>
+    </div>
+    <div class="col">
+       <div class="shadow-sm card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="0514.png" alt="..." width="118" class="img-fluid rounded-start">
+    </div>
+    <div class="col-md-8 bg-dark">
+      <div class="card-body">
+        <h5 class="card-title" style="color:white">0514</h5>
+        <p class="card-text" style="color:white">Bootstrap元件(二)</p>
+		  <a href="/0514/index.html" class="btn btn-light">See More...</a>
+	 </div>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+</div>
+</div>
+<h2 class = "sheet-h" data-zh="送愛登錄" data-en="Donate Registration">網頁拜訪資訊</h2>
+<h4 class = "sheet-hc" data-zh="本平臺僅供送愛物資資訊彙整，不提供代送服務" data-en="This platform is solely for consolidating information on donated supplies and does not provide delivery services.">歡迎填寫以下資料</h4>
+<hr>
+<form>
+    <!--basic information-->
+    <h2 class = "title" data-zh="基本資訊" data-en="Basic Information">基本資訊</h2>
+    <div class ="sheet-c">
+        <div class = "sheet-cl">
+            <h2 class ="sheet-ct" data-zh="名義" data-en="Basis" >名義</h2>
+            <label class = "label">
+                <input type="radio" name="user_type" value="1" class = "radio"> 
+                <span class="label-text" data-zh="個人" data-en="Individual">個人</span>
+            </label>
+            <label>
+                <input type="radio" name="user_type" value="2" class = "radio"> 
+                <span class="label-text" data-zh="團體" data-en="Organization">團體</span>
+            </label>
+        </div>
+        <div class = "sheet-cr">
+            <h2 class = "sheet-ct" data-zh="單位名稱" data-en="Name">單位名稱</h2>
+            <input type="text" placeholder="王小明/ 國立臺北教育大學" class = "input" data-zh="王小明/ 國立臺北教育大學" data-en="Ben/ National Taipei University of Education">
+        </div>
+    </div>
+    <!--deliver information-->
+    <h2 class = "title" data-zh="配送資訊" data-en="Delivery Information">日期地點資訊</h2>
+    <div class = "sheet-c">
+        <div class = sheet-cl>
+            <h2 class = "sheet-ct" data-zh="日期" data-en="Date">日期</h2>
+            <input type="date" class="input" id="dateInput">
+            <h2 class = "sheet-cm" data-zh="縣市" data-en="Country/ City">縣市</h2>
+            <select id="city" name="city" onchange="updateAreaOptions()" class="input">
+                <option data-zh="請選擇縣市" data-en="Please select a county/ city">請選擇縣市</option>
+                <option value="臺北市">臺北市</option>
+                <option value="新北市">新北市</option>
+                <option value="基隆市">基隆市</option>
+                <option value="新竹市">新竹市</option>
+                <option value="桃園市">桃園市</option>
+                <option value="新竹縣">新竹縣</option>
+                <option value="宜蘭縣">宜蘭縣</option>
+                <option value="臺中市">臺中市</option>
+                <option value="苗栗縣">苗栗縣</option>
+                <option value="彰化縣">彰化縣</option>
+                <option value="南投縣">南投縣</option>
+                <option value="雲林縣">雲林縣</option>
+                <option value="高雄市">高雄市</option>
+                <option value="臺南市">臺南市</option>
+                <option value="嘉義市">嘉義市</option>
+                <option value="嘉義縣">嘉義縣</option>
+                <option value="屏東縣">屏東縣</option>
+                <option value="澎湖縣">澎湖縣</option>
+                <option value="花蓮縣">花蓮縣</option>
+                <option value="臺東縣">臺東縣</option>
+                <option value="金門縣">金門縣</option>
+                <option value="連江縣">連江縣</option>
+            </select>
+        <div class="div-other">
+            <input type="checkbox" id="other" name="other" value="other" class="checkbox" onclick="toggleOtherInput()">
+            <label for="other" class="other-label" data-zh="其他" data-en="Other">詳細地點</label><br>
+            <input type="text" class="input-other" id="input-other" placeholder="請輸入詳細地點"  data-zh="請輸入詳細地點" data-en="Please enter a specific place">
+        </div>
+        </div>
+        <div class = "sheet-cr">
+            <h2 class = "sheet-ct" data-zh="時間" data-en="Time">時間</h2>
+            <input type="time" class="input">
+            <h2 class = "sheet-cm" data-zh="地區" data-en="District">地區</h2>
+            <select id="area" name="area" onchange="updatePlaceOptions()" class="input">
+                <option data-zh="請選擇地區" data-en="Please select a district">請選擇地區</option>
+            </select>
+        </div>
+    </div>
+    <!--object information-->
+    <h2 class = "title"  data-zh="物品資訊" data-en="Supplies Information">心情資訊</h2>
+    <div class = "sheet-c">
+        <div class = "sheet-cl">
+            <h2 class ="sheet-ct" data-zh="類別（物品）" data-en="Category(Supplies)">網站給您的感受</h2>
+            <select id="object" name="object" class="input">
+                <option data-zh="請選擇類別（物品）" data-en="Please select a category(supply)">請選擇感受</option>
+                <option>開心</option>
+                <option>不開心</option>
+                <option>普通</option>
+                <option>不知道</option>
+            </select>    
+            <h2 class = "sheet-cm" data-zh="預計受惠人數" data-en="Expected Number of Beneficiaries">網站評分(1-100)</h2>
+            <input type="number" placeholder="100" min="0" class="input" id="beneficiaries">
+        </div>
+        <div class = sheet-cr>
+            <h2 class ="sheet-ct" data-zh="物品名稱/ 件數" data-en="Item name/ Quantity">一個形容詞形容這個網頁</h2>
+            <input type="text" placeholder="順暢" class="input" data-zh="毛衣/ 60件" data-en="sweaters/ 60">
+        </div>
+    </div>
+    <!--other information-->
+    <h2 class = "title" data-zh="其他資訊" data-en="Other Information">其他資訊</h2>
+    <div class="other">
+        <h2 class ="sheet-ct" data-zh="備註" data-en="Remarks">給網站的更多建議</h2>
+        <textarea class="other-input" placeholder="任何想說的話" data-zh="女用20件，男用40件" data-en="20 for female, 40 for male"></textarea>
+    </div>
+    <div class="div-button">
+        <button type="submit" class="button" data-zh="送出" data-en="Submit">送出</button>
+    </div>
+</form>
+	<!--footer-->
+	<div class="container-fluid bg-warning-subtle">
+  
+  <div class="row">
+	  <div class="col-1">
+    &nbsp; </div>
+<div class="col ">
+    <p>&nbsp;</p>
+    <p>國立臺北教育大學</p>
+    <p>數位科技設學系</p>
+    <p>111219007 趙翊如</p>
+    <p>s111219007@stu.ntue.edu.tw&nbsp;</p>
+</div>
+    <div class="col">
+    &nbsp; </div>
+  </div>
+</div>
+  <script src="index.js"></script>
+<!--
+		<h1>這是Tiatde的第一個網頁</h1>
+		<p><a href="0305/index.html">0305-我的名片</a></p>
+	<p><a href="0312/index.html">0312-網頁容器</a>&nbsp;</p>
+	<p><a href="0319/index.html">0319-CSS設計工具&nbsp;</a></p>
+	<p><a href="0326/index.html">0326-CSS基本語法常用屬性I</a></p>
+	<p><a href="https://sites.google.com/stu.ntue.edu.tw/economic/%E9%A6%96%E9%A0%81">0402-Google Site</a></p>
+	<p><a href="0416/index.html">0416-Bootstrap網格&nbsp;</a></p>
+	<p><a href="0423/index.html">0423-Bootstrap內容樣式</a></p>
+	<p><a href="0423/bonus.html">0423-bonus&nbsp;</a></p>
+	<p><a href="0430/index.html">0430-公用類別與表單&nbsp;</a></p>
+	<p><a href="0430/bonus.html">0430-bonus&nbsp;</a></p>
+	<p><a href="0507/index.html">0507-Bootstrap元件(一)&nbsp;</a></p>
+	<p><a href="0514/index.html">0514-Bootstrap元件(二)&nbsp;</a></p>
+<h1>這是Tiatde自己做的遊戲</h1>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/pREArBHpHJ4?si=Kta9QPuFVsxyE9SU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		<h1>這是Tiatde就讀的學校</h1>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3615.278260935056!2d121.53976648662041!3d25.024629181499925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a908a8232611%3A0xeebfb2d71a5025c7!2z5ZyL56uL6Ie65YyX5pWZ6IKy5aSn5a24!5e0!3m2!1szh-TW!2stw!4v1708998424985!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+-->
+		
+	</body>
+
+</html>
+
+
+

@@ -1,0 +1,141 @@
+/*sheet*/
+.sheet-h{
+    color: #19396d;
+    margin-top: 147px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+.sheet-hc{
+    color: #ff0202;
+    margin-top: 5px;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+hr{
+    border: 1px solid #19396D;
+    text-align: center;
+    margin-right: 140px;
+    margin-left: 140px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+.title{
+    text-align: center;
+    color: white;
+    background-color: #19396D;
+    padding-top: 8px;
+    padding-bottom: 8px;;
+    margin-top: 35px;
+    margin-bottom: 0px;
+    margin-right: 140px;
+    margin-left: 140px;
+}
+.sheet-c{
+    display: flex;
+}
+.sheet-cl{
+    margin-left: 140px;
+    width: 50%;
+    padding-right: 30px;
+}
+.sheet-cr{
+    margin-right: 140px;
+    width: 50%;
+    padding-left: 30px;
+}
+.sheet-ct{
+    margin-top: 35px;
+    margin-bottom: 10px;
+}
+.sheet-cm{
+    margin-top: 20px;
+    margin-bottom: 10p;
+}
+.input{
+    background-color: #d9d9d9;
+    border-radius: 2px;
+    height: 40px;
+    border: none;
+    width: 100%;
+    padding-left: 11px;
+    padding-right: 11px;
+}
+/*basic information*/
+.radio{
+    margin-right:20px;
+    margin-left: 5px;
+}
+.label{
+    margin-right: 35px;
+    text-size-adjust: 15px;
+}
+/*deliver information*/
+.div-other{
+    display: flex;
+    margin-top: 20px;
+}
+.checkbox{
+    margin-right: 10px;
+}
+.other-lable{
+    margin-right: 10px;
+}
+.input-other{
+    margin-left: 10px;;
+    background-color: #d9d9d9;
+    border-radius: 2px;
+    height: 20px;
+    border: none;
+    width: 76%;
+    padding-left: 11px;
+    padding-right: 11px;
+    display: none;
+}
+/*objext information*/
+/*other information*/
+.other{
+    margin-left: 140px;
+    margin-right: 140px;
+    margin-bottom: 70px;
+}
+.other-input{
+    background-color: #d9d9d9;
+    border-radius: 2px;
+    height: 245px;
+    border: none;
+    width: 100%;
+    padding-left: 11px;
+    padding-right: 11px;
+    padding-top: 11px;
+}
+/*button*/
+.button{
+    margin-bottom: 70px;
+    font-size: 15px;
+    color: white;
+    background-color: #19396D;
+    border-radius: 100px;
+    width: 120px;
+    height: 40px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+
+}
+.div-button{
+    display: flex;
+    justify-content: end;
+    margin-right: 140px;
+    margin-left: 140px;
+}
+.button:hover{
+    background-color: #505f75;
+}
+h2{
+    font-size: 20px;
+}
+h4{
+    font-size: 15px;;
+}
